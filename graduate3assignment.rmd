@@ -1,6 +1,6 @@
 ---
-title: "Lecture 3"
-author: "Eryn McFarlane"
+title: "Lecture 3 assignment"
+author: "Nischal Pokhrel"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -18,13 +18,13 @@ NOTE: There are 9 questions below to answer. Do your best to answer them in full
 
 QUESTION: Describe the trait that you're simulating. This can be a real trait that you are working on, or hope to work on, or it can be completely made up. 
 Pay special attention to the N that you're expecting, the mean, and the sd around the mean. 
-
+I will be working on protein expression in *Staphylococcus aureus* to decipher how it would effect antibiotic resistanceprotei  
 ```{r simulate trait of interest}
-rnorm(1000, 0, 10)->trait_of_interest ### change this to be a trait that you're actually interested in, with an appropriate distribution! 
+rnorm(1000, 50,1)->vraT_protein_expression_level 
 
-plot(density(trait_of_interest))
-min(trait_of_interest)
-max(trait_of_interest)
+plot(density(vraT_protein_expression_level)
+min(1)
+max(100)
 
 ```
 
