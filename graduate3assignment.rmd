@@ -19,12 +19,15 @@ NOTE: There are 9 questions below to answer. Do your best to answer them in full
 QUESTION: Describe the trait that you're simulating. This can be a real trait that you are working on, or hope to work on, or it can be completely made up. 
 Pay special attention to the N that you're expecting, the mean, and the sd around the mean. 
 I will be working on protein expression in *Staphylococcus aureus* to decipher how it would effect antibiotic resistance   
-```{r simulate vraT potein expression level}
-rnorm(1000, 50,1)->vraT_protein_expression_level 
+```# Simulate VrAT protein expression levels in Staphylococcus aureus
+rnorm(1000, mean = 10, sd = 1) -> VrAT_expression # Adjust the mean and standard deviation based on typical expression levels
 
-plot(density(vraT_protein_expression_level)
-min(1)
-max(100)
+# Plot the density of VrAT protein expression levels
+plot(density(VrAT_expression), main = "VrAT Protein Expression in Staphylococcus aureus", xlab = "Protein Expression Level", ylab = "Density")
+
+# Get the minimum and maximum expression levels
+min(VrAT_expression)
+max(VrAT_expression)
 
 ```
 
