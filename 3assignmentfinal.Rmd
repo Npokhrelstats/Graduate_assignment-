@@ -49,4 +49,5 @@ lines(density(data[which(data$predictor_t.test == TRUE), 1]), ylim=c(0, 0.1), xl
 ### Plot one-sample distribution
 plot(density(data$vraT_expression_level), col="red", main="One-sample t-test")
 t.test(data$vraT_expression_level) 
+```
 ### What is this test doing?
