@@ -16,7 +16,7 @@ NOTE: There are 9 questions below to answer. Do your best to answer them in full
 
 QUESTION: Describe the trait that you're simulating. This can be a real trait that you are working on, or hope to work on, or it can be completely made up. 
 Pay special attention to the N that you're expecting, the mean, and the sd around the mean. 
-Answer-I will be working on protein expression in *Staphylococcus aureus*. I want to measure what proportion of celss are involved in protein secretion of vraT protein, the vraT protein is alleged to aid in vancomycin resistance.
+Answer-I will be working on protein expression in *Staphylococcus aureus*. I want to measure what proportion of cells (in a total population of 100 million) are involved in protein secretion of vraT protein, the vraT protein is alleged to aid in vancomycin resistance. Here 1=1 Million, 2=2 Million so on and so forth of a cells.
 
 ```{r simulate vraT expression level}
 rnorm(1000, 50, 1)->vraT_expression_level 
